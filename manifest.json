@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Notes",
+  "version": "1.0",
+  "description": "This is a sample Chrome extension.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/16.png",
+      "48": "img/48.png",
+      "128": "img/128.svg"
+   }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "icons": {
+   "16": "img/16.png",
+   "48": "img/48.png",
+    "128": "img/128.svg"
+   }
+}
