@@ -16,7 +16,7 @@
   },
   "permissions": [
       "storage",
-      "tabs",              // يتيح الوصول إلى معلومات التبويب
+      "tabs",
       "activeTab"
   ],
   "icons": {
