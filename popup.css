@@ -12,14 +12,14 @@ header {
 }
 body {
     background-color:#F5F365;
-    width: 318px;
+    width: 441px;
     height: 350px;
-    border:1px solid #000;
     position: relative;
 }
 
 section {
     display: flex;
+    justify-content: center;
 }
 .H {
     cursor: pointer;
@@ -86,6 +86,10 @@ textarea:focus::placeholder {
 }
 .note {
   display: block;
+}
+#notesContainer {
+  text-align:center;
+  font-size:18px;
 }
 .Twitter {
     width: 16px;
