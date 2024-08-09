@@ -1,7 +1,6 @@
 chrome.commands.onCommand.addListener(function(command) {
   if (command === "toggle-feature") {
-    // هنا يمكنك وضع الكود الذي تريد تشغيله عند الضغط على الاختصار
-    console.log("The notes popup should appear now!");
+    // الكود الخاص بك لفتح أو إغلاق نافذة الملاحظات
     chrome.action.openPopup();
   }
 });

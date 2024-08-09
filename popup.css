@@ -127,9 +127,10 @@ textarea:focus::placeholder {
   line-height:29.5px;
 }
 .Twitter {
-    width: 16px;
+    width: 13px;
     position: relative;
-    bottom: -4px;
+    bottom: -3px;
+    left: -2px;
 }
 footer {
     text-align: left;
@@ -139,4 +140,63 @@ footer {
     left: 2px;
     display: block;
     height: 9px;
+}
+/* Default light mode styles here */
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    width: 441px;
+    height: 350px;
+    position: relative;
+    background: linear-gradient(to bottom, #1E1E1E 29px, #333333 1px);
+    background-size: 100% 30px;
+    border-radius: 5px;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 69px;
+        left: 35px;
+        height: 100%;
+        width: 1px;
+        background:none;
+    }
+}
+
+.dark-mode header,
+.dark-mode .icons-text,
+.dark-mode .note {
+    color: #ffffff;
+}
+
+/* تغيير لون الأيقونات إلى الأبيض في الوضع الداكن */
+.dark-mode .icons-img,
+.dark-mode .Twitter,
+.dark-mode #mode-toggle img {
+    filter: invert(1);
+}
+
+.dark-mode #theNote {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.dark-mode .H {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .icons-text {
+    color: #ffffff;
+}
+
+.dark-mode .Twitter {
+    filter: invert(1);
+}
+
+.dark-mode .note {
+    color: #ffffff;
 }
