@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             deleteIcon.src = 'img/deleteicon.svg'; // المسار إلى الصورة
             deleteIcon.className = 'delete-icon';
             deleteIcon.style.position = 'absolute';
-            deleteIcon.style.top = '75%';
+            deleteIcon.style.top = '58%';
             deleteIcon.style.right = '10px';
             deleteIcon.style.transform = 'translateY(-50%)';
             deleteIcon.style.cursor = 'pointer';

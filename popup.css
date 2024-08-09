@@ -131,6 +131,7 @@ textarea:focus::placeholder {
     margin-top: 79px;
     font-size:20px;
     line-height:29.5px;
+    padding-bottom: 4px;
 }
 .Twitter {
     width: 13px;
