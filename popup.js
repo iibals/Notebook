@@ -165,14 +165,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         hideShowBtn.addEventListener('click', function() {
+            const toggleText = document.getElementById('toggleText');
+            const toggleIcon = document.getElementById('toggleIcon');
+
             if (notesContainer.style.display === 'none') {
-                // إذا كانت الملاحظات مخفية، عرضها
+                // إذا كانت الملاحظات مخفية، عرضها وتحديث النص والصورة
                 notesContainer.style.display = 'block';
+                toggleText.textContent = 'Hide Notes';
+                toggleIcon.src = 'img/hide.svg';
             } else {
-                // إذا كانت الملاحظات معروضة، إخفائها
+                // إذا كانت الملاحظات معروضة، إخفائها وتحديث النص والصورة
                 notesContainer.style.display = 'none';
+                toggleText.textContent = 'Show Notes';
+                toggleIcon.src = 'img/show.svg';
             }
         });
+
 
         deleteBtn.addEventListener('click', function() {
             // عرض نافذة تأكيد
