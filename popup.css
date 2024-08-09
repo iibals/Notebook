@@ -120,10 +120,9 @@ textarea:focus::placeholder {
   display: block;
 }
 .attention {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 4px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 4px;
 }
 #notesContainer {
     text-align:center;
@@ -147,6 +146,26 @@ footer {
     left: 2px;
     display: block;
     height: 9px;
+}
+#smalls {
+  padding-left: 36px;
+}
+.S {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 7px;
+    transition: all .2s ease-in-out;
+}
+.S:hover {
+    box-shadow: 0px 0px 1.8px 0px #393939;
+    opacity: 0.75;
+}
+.S:active {
+    box-shadow: 0px 0px 1px 0px #393939;
+    opacity: 0.5;
 }
 /* Default light mode styles here */
 

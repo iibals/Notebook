@@ -7,27 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const deleteBtn = document.getElementById('delete');
     const noteTextarea = document.getElementById('theNote');
     const notesContainer = document.getElementById('notesContainer');
+    const smallsDiv = document.getElementById('smalls');
     noteTextarea.focus();
 
     // إنشاء زر الترتيب ديناميكيًا وإضافته إلى الواجهة
     const sortBtn = document.createElement('button');
     sortBtn.id = 'sort';
-    sortBtn.style.position = 'relative';
-    sortBtn.style.bottom = '-17px';
-    sortBtn.style.marginBottom = '10px';
-    sortBtn.style.backgroundColor = 'transparent';
-    sortBtn.style.border = 'none';
-    sortBtn.style.cursor = 'pointer';
-    sortBtn.style.fontSize = '14px';
-    sortBtn.style.display = 'flex';
-    sortBtn.style.alignItems = 'center';
-    sortBtn.style.gap = '5px';
-    sortBtn.style.marginLeft = '35px';
-    document.body.insertBefore(sortBtn, notesContainer);
+    sortBtn.className = 'S';
+    smallsDiv.appendChild(sortBtn, notesContainer);
 
     const sortIcon = document.createElement('img');
-    sortIcon.style.width = '20px';
-    sortIcon.style.height = '20px';
+    sortIcon.style.width = '15px';
+    sortIcon.style.height = '15px';
     sortBtn.appendChild(sortIcon);
 
     const sortText = document.createElement('span');
@@ -56,17 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // إنشاء زر التبديل بين الوضعين ووضعه في أسفل اليسار
     const modeToggleBtn = document.createElement('button');
     modeToggleBtn.id = 'mode-toggle';
-    modeToggleBtn.style.position = 'absolute';
-    modeToggleBtn.style.bottom = '-36px';
-    modeToggleBtn.style.left = '33.5px';
-    modeToggleBtn.style.backgroundColor = 'transparent';
-    modeToggleBtn.style.border = 'none';
-    modeToggleBtn.style.cursor = 'pointer';
-    document.body.appendChild(modeToggleBtn);
+    modeToggleBtn.className = 'S'; // Adding the class "H"
+    smallsDiv.insertBefore(modeToggleBtn, smallsDiv.firstChild);
+
 
     const modeIcon = document.createElement('img');
-    modeIcon.style.width = '30px';
-    modeIcon.style.height = '30px';
+    modeIcon.style.width = '15px';
+    modeIcon.style.height = '15px';
     modeToggleBtn.appendChild(modeIcon);
 
     // تعيين الأيقونة الصحيحة بناءً على الوضع الحالي
@@ -238,10 +225,10 @@ document.addEventListener('DOMContentLoaded', function() {
         function updateSortButton(sortOrder) {
             if (sortOrder === 'desc') {
                 sortIcon.src = 'img/arrowdown.svg';
-                sortText.innerText = 'Sort by Oldest';
+                sortText.innerText = '';
             } else {
                 sortIcon.src = 'img/arrowup.svg';
-                sortText.innerText = 'Sort by Newest';
+                sortText.innerText = '';
             }
         }
     });
