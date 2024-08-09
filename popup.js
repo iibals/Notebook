@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // إنشاء زر الترتيب ديناميكيًا وإضافته إلى الواجهة
     const sortBtn = document.createElement('button');
     sortBtn.id = 'sort';
+    sortBtn.style.position = 'relative';
+    sortBtn.style.bottom = '-17px';
     sortBtn.style.marginBottom = '10px';
     sortBtn.style.backgroundColor = 'transparent';
     sortBtn.style.border = 'none';
@@ -55,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const modeToggleBtn = document.createElement('button');
     modeToggleBtn.id = 'mode-toggle';
     modeToggleBtn.style.position = 'absolute';
-    modeToggleBtn.style.bottom = '10px';
-    modeToggleBtn.style.left = '35px';
+    modeToggleBtn.style.bottom = '-36px';
+    modeToggleBtn.style.left = '33.5px';
     modeToggleBtn.style.backgroundColor = 'transparent';
     modeToggleBtn.style.border = 'none';
     modeToggleBtn.style.cursor = 'pointer';
