@@ -1,8 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Notes",
-  "version": "1.1",
-  "description": "This is a just a simple notes",
+  "version": "2.1", // add DarkMode to it and add array when you add the notes Make it in array and try to sort it and delete
+  "description": "This notebook allows you to save your notes separately for each website.",
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Toggle the notes popup with Shift+N"
+    }
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -22,5 +30,5 @@
    "16": "img/16.png",
    "48": "img/48.png",
     "128": "img/128.png"
-   }
+  }
 }
