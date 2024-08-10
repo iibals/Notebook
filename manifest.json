@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Notes",
+  "name": "NoteBook",
   "version": "2.1",
   "description": "This notebook allows you to save your notes separately for each website.",
   "commands": {
