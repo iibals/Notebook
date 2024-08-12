@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "NoteBook",
-  "version": "2.1",
+  "name": "NotesBook",
+  "version": "2.3",
   "description": "This notebook allows you to save your notes separately for each website.",
   "commands": {
     "toggle-feature": {
